@@ -7,7 +7,7 @@
 
 /* Body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* cleaner font */
   background-color: #FFEB3B; /* Yellow background */
 }
 
@@ -16,11 +16,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 15px 40px; /* slightly smaller top/bottom padding */
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: rgba(255, 235, 59, 0.95); /* Slightly transparent yellow */
+  background-color: rgba(255, 235, 59, 0.95);
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -28,9 +28,10 @@ nav {
 nav a {
   text-decoration: none;
   color: #000;
-  font-weight: bold;
-  margin-left: 20px;
+  font-weight: 600;
+  margin-left: 25px;
   transition: color 0.3s;
+  font-size: 1.1rem; /* adjust tab size */
 }
 
 nav a:hover {
@@ -38,20 +39,24 @@ nav a:hover {
 }
 
 .nav-left a {
-  font-size: 1.5em;
+  font-size: 1.6rem; /* larger logo / homepage link */
+  font-weight: 700;
 }
 
 /* Main Content / Background Image */
-.background-image {
-  margin-top: 80px; /* Offset for fixed nav */
+main {
+  margin-top: 80px; /* offset for fixed nav */
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.background-image img {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  display: block;
+  /* Background Image */
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;  /* scales image to fit without cropping */
+  background-position: center;
+  background-clip: content-box;
+  padding: 40px; /* margin between image and edges */
+  width: calc(100% - 80px); /* account for left/right padding */
+  min-height: calc(100vh - 80px); /* fill viewport minus nav */
 }
