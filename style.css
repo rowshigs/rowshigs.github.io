@@ -7,8 +7,8 @@
 
 /* Body */
 body {
-  font-family: 'Bitter', serif; /* change default font to Bitter */
-  background-color: #FFEB3B; /* Yellow background */
+  font-family: 'Bitter', serif;
+  background-color: #FFEB3B; /* Yellow fallback */
 }
 
 /* Navigation Bar */
@@ -23,7 +23,6 @@ nav {
   background-color: rgba(255, 235, 59, 0.95);
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  font-family: 'Bitter', serif;
 }
 
 /* Logo / Home link */
@@ -37,7 +36,7 @@ nav {
 /* Navigation tabs */
 .nav-right {
   display: flex;
-  gap: 40px; /* increases spacing between tabs, moves them toward center */
+  gap: 40px; /* spacing between tabs */
 }
 
 .nav-right a {
@@ -52,30 +51,31 @@ nav {
   color: #333;
 }
 
-/* Main Content / Background Image */
+/* Main Content / Hero */
 main {
-  margin-top: 80px; /* offset for nav */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('background.jpg');
-  background-repeat: no-repeat;
-  background-size: contain; 
-  background-position: center;
-  width: calc(100% - 80px); 
-  min-height: calc(100vh - 80px);
-  position: relative; /* for overlay text */
-  padding: 40px;
+  margin-top: 80px; /* offset for fixed nav */
 }
 
-/* Centered Text Overlay */
+.hero {
+  position: relative;
+  background-image: url('background.jpg'); /* your image */
+  background-size: contain; /* scales image to fit */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: calc(100% - 80px);
+  min-height: calc(100vh - 80px); /* fills viewport minus nav */
+  margin: 0 auto;
+  padding: 40px; /* margin inside image */
+}
+
+/* Centered text overlay */
 .center-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #000; /* text color */
+  color: #000;
 }
 
 .center-text h1 {
@@ -87,4 +87,11 @@ main {
 .center-text p {
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .center-text h1 { font-size: 2rem; }
+  .center-text p { font-size: 1rem; }
+  .nav-right { gap: 20px; }
 }
