@@ -7,7 +7,7 @@
 
 /* Body */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif; /* cleaner font */
+  font-family: 'Bitter', serif; /* change default font to Bitter */
   background-color: #FFEB3B; /* Yellow background */
 }
 
@@ -16,47 +16,75 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px; /* slightly smaller top/bottom padding */
+  padding: 15px 40px;
   position: fixed;
   width: 100%;
   top: 0;
   background-color: rgba(255, 235, 59, 0.95);
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Bitter', serif;
 }
 
-nav a {
+/* Logo / Home link */
+.nav-left a {
+  font-size: 1.6rem;
+  font-weight: 700;
   text-decoration: none;
   color: #000;
-  font-weight: 600;
-  margin-left: 25px;
+}
+
+/* Navigation tabs */
+.nav-right {
+  display: flex;
+  gap: 40px; /* increases spacing between tabs, moves them toward center */
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.1rem;
   transition: color 0.3s;
-  font-size: 1.1rem; /* adjust tab size */
 }
 
-nav a:hover {
+.nav-right a:hover {
   color: #333;
-}
-
-.nav-left a {
-  font-size: 1.6rem; /* larger logo / homepage link */
-  font-weight: 700;
 }
 
 /* Main Content / Background Image */
 main {
-  margin-top: 80px; /* offset for fixed nav */
+  margin-top: 80px; /* offset for nav */
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* Background Image */
   background-image: url('background.jpg');
   background-repeat: no-repeat;
-  background-size: contain;  /* scales image to fit without cropping */
+  background-size: contain; 
   background-position: center;
-  background-clip: content-box;
-  padding: 40px; /* margin between image and edges */
-  width: calc(100% - 80px); /* account for left/right padding */
-  min-height: calc(100vh - 80px); /* fill viewport minus nav */
+  width: calc(100% - 80px); 
+  min-height: calc(100vh - 80px);
+  position: relative; /* for overlay text */
+  padding: 40px;
+}
+
+/* Centered Text Overlay */
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000; /* text color */
+}
+
+.center-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.center-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
