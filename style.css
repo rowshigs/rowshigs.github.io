@@ -8,7 +8,7 @@
 /* Body */
 body {
   font-family: 'Bitter', serif;
-  background-color: #FFEB3B; /* Yellow fallback */
+  background-color: #FFEB3B; /* fallback yellow */
 }
 
 /* Navigation Bar */
@@ -53,29 +53,31 @@ nav {
 
 /* Main Content / Hero */
 main {
-  margin-top: 80px; /* offset for fixed nav */
+  margin-top: 80px; /* offset for nav */
 }
 
 .hero {
   position: relative;
   background-image: url('background.jpg'); /* your image */
-  background-size: contain; /* scales image to fit */
   background-repeat: no-repeat;
-  background-position: center;
-  width: calc(100% - 80px);
-  min-height: calc(100vh - 80px); /* fills viewport minus nav */
-  margin: 0 auto;
+  background-position: center center;
+  background-size: cover; /* fills container and scales with browser */
+  
+  width: 100%;
+  height: 100vh; /* always fills the viewport height */
+  min-height: 500px; /* optional: minimum height */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 40px; /* margin inside image */
 }
 
 /* Centered text overlay */
 .center-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   color: #D3D3D3;
+  max-width: 90%; /* prevents text overflow on very narrow screens */
 }
 
 .center-text h1 {
