@@ -142,3 +142,77 @@ main {
   .center-text h1 { font-size: 2rem; }
   .center-text p { font-size: 1rem; }
 }
+
+/* Mathematics content box */
+.content-box {
+  position: absolute;
+  top: 120px; /* below nav */
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(800px, 90%);
+  background: rgba(255, 235, 59, 0.95);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  z-index: 20;
+}
+
+.content-box h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #ff4900;
+}
+
+/* Paper list */
+.paper-list {
+  list-style: none;
+}
+
+.paper-list li {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.paper-list a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.paper-list a:hover {
+  text-decoration: underline;
+}
+
+.paper-meta {
+  color: #555;
+  font-size: 1rem;
+  margin-left: 8px;
+}
+
+.paper-desc {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .content-box {
+    padding: 20px;
+  }
+
+  .content-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .paper-list a,
+  .paper-title {
+    font-size: 1.05rem;
+  }
+
+  .paper-desc {
+    font-size: 0.95rem;
+  }
+}
