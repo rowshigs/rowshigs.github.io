@@ -169,7 +169,7 @@ main {
   line-height: 1.4;
 }
 
-media (max-width: 768px) {
+@media (max-width: 768px) {
   /* Nav */
   .nav-right {
     position: absolute;
