@@ -1,2 +1,2 @@
 # rowanshigeno.github.io
-Personal website.
+Personal and professional website.
