@@ -111,10 +111,10 @@ main {
 
 /* Mathematics content box */
 .content-box {
-  position: absolute;
-  top: 120px; /* below nav */
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: min(800px, 90%);
   background: rgba(255, 235, 59, 0.95);
   padding: 30px 40px;
