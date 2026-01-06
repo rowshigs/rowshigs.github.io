@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music | Rowan Shigeno</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar (same as other pages) -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="logo">Rowan Shigeno</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div class="nav-right" id="nav-menu">
+      <a href="mathematics.html">Mathematics</a>
+      <a href="music.html">Music</a>
+      <a href="writing.html">Writing</a>
+      <a href="art.html">Art</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Background image -->
+  <main>
+    <div class="hero">
+      <img src="background.jpg" alt="Background" class="hero-image">
+    </div>
+
+    <!-- Music Content Box -->
+    <div class="content-box">
+      <h1>Music</h1>
+
+      <ul class="paper-list">
+        <li>
+          <a href="https://www.instagram.com/reels/DKTVitoR7h-/"
+             target="_blank" rel="noopener noreferrer">
+            Banana Bread
+          </a>
+          <div class="paper-meta">
+            June 2025
+          </div>
+          <div class="paper-desc">
+            Original electronic-rap composition, produced and recorded in the free time I had between college graduation and a summer research program.
+          </div>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/reels/DR72L7cEln0/"
+             target="_blank" rel="noopener noreferrer">
+            Trajectories
+          </a>
+          <div class="paper-meta">
+            October 2025
+          </div>
+          <div class="paper-desc">
+            Song and video utilizing pitch shifts and bleeping, centering on the uncertainty around and passage of time.  Nonlyrical, absurd.
+          </div>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/reels/DSykmfxjGc-/"
+             target="_blank" rel="noopener noreferrer">
+            Plastic Divinity
+          </a>
+          <div class="paper-meta">
+            December 2025
+          </div>
+          <div class="paper-desc">
+            Avant-garde original music.  A meditation on modern alienation and existential dissatisfaction in a hyper-competitive, image-conscious society.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-menu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
