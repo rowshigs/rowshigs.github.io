@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathematics | Rowan Shigeno</title>
+
+  <!-- Google Fonts: Bitter -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="logo">Rowan Shigeno</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div class="nav-right" id="nav-menu">
+      <a href="mathematics.html">Mathematics</a>
+      <a href="music.html">Music</a>
+      <a href="writing.html">Writing</a>
+      <a href="art.html">Art</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="hero">
+      <img src="/background.jpg" alt="Background" class="hero-image">
+
+      <!-- Papers Box -->
+      <div class="content-box">
+        <h1>Mathematics</h1>
+
+        <ul class="paper-list">
+          <li>
+            <a href="/papers/An_assortment_of_mathematical_insights.pdf" target="_blank">
+              An assortment of mathematical insights.
+            </a>
+            <span class="paper-meta">— 2025</span>
+            Personal project— collection of mathematical problems I find particularly interesting.
+          </li>
+
+          <li>
+            <a href="/papers/Cycles_on_Metric_Graphs_of_given_Entropy.pdf" target="_blank">
+              Cycles on Metric Graphs of given Entropy.
+            </a>
+            <span class="paper-meta">— 2025</span>
+
+            <p class="paper-desc">
+              Senior thesis, with Tarik Aogaub.
+            </p>
+          </li>
+
+          <li>
+            <a href="/papers/The_Euclidean_Steiner_Tree_Problem.pdf" target="_blank">
+              The Euclidean Steiner Tree Problem.
+            </a>
+            <span class="paper-meta">— 2025</span>
+
+            <p class="paper-desc">
+              Introduction to and algorithms for the Steiner tree problem.
+            </p>
+          </li>
+
+          <li>
+            <span class="paper-title">
+              Kth order Voronoi diagrams in the Hilbert metric.
+            </span>
+            <span class="paper-meta">— 2026</span>
+
+            <p class="paper-desc">
+              Soon to be published through the Society of Computational Geometry.
+            </p>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
