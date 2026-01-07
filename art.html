@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rowan Shigeno</title>
+
+  <!-- Google Fonts: Bitter -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="logo">Rowan Shigeno</a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div class="nav-right" id="nav-menu">
+      <a href="mathematics.html">Numbers</a>
+      <a href="music.html">Noises</a>
+      <a href="poetry.html">Words</a>
+      <a href="art.html">Visual</a>
+      <a href="profile.html">About</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="hero">
+      <img src="visual.jpg" alt="Background" class="hero-image">
+    </div>
+  </main>
+
+  <script>
+  function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("active");
+  }
+</script>
+</body>
+</html>
