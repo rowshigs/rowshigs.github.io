@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Rowan Shigeno</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar (same as other pages) -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="logo">Rowan Shigeno</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div class="nav-right" id="nav-menu">
+      <a href="mathematics.html">Mathematics</a>
+      <a href="music.html">Music</a>
+      <a href="writing.html">Writing</a>
+      <a href="art.html">Art</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Background image -->
+  <main>
+    <div class="hero">
+      <img src="background.jpg" alt="Background" class="hero-image">
+    </div>
+
+    <!-- About Content Box -->
+    <div class="content-box">
+      <h1>About</h1>
+
+      <ul class="paper-list">
+        
+        <li>
+            <span class="paper-title">
+              Who dis?
+            </span>
+            <div class="paper-meta"> 僕の名前はローエン・重野です。よろしくお願いします。</div>
+
+            <p class="paper-desc">
+              Aggressively mid at many things, imperfect at everything, excellent and nothing, interesting often, creative always, and just a human, after all.
+            </p>
+          </li>
+
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-menu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
