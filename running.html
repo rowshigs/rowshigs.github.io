@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music | Rowan Shigeno</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar (same as other pages) -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="logo">Rowan Shigeno</a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div class="nav-right" id="nav-menu">
+      <a href="mathematics.html">papers</a>
+      <a href="music.html">pitches</a>
+      <a href="poetry.html">poetry</a>
+      <a href="running.html">paces</a>
+      <a href="art.html">photos</a>
+      <a href="profile.html">profile</a>
+    </div>
+  </nav>
+
+  <!-- Background image -->
+  <main>
+    <div class="hero">
+      <img src="background.jpg" alt="Background" class="hero-image">
+    </div>
+
+    <!-- Music Content Box -->
+    <div class="content-box">
+      <h1>Running results</h1>
+
+      <ul class="paper-list">
+        <li>
+          <a href="https://sportstats.one/event/toronto-marathon/leaderboard/145787"
+             target="_blank" rel="noopener noreferrer">
+            2026 Toronto Marathon
+          </a>
+          <div class="paper-meta">
+            May 3, 2026
+          </div>
+          <div class="paper-desc">
+            Finished second overall in a field of 3,300 runners with a time of 2:31:19.
+          </div>
+        </li>
+
+        <li>
+          <a href="https://results.raceroster.com/v3/events/2qa9p5rj45zrc5g3/race/282079"
+             target="_blank" rel="noopener noreferrer">
+            2026 Boston's Run To Remember Half Marathon
+          </a>
+          <div class="paper-meta">
+            May 24, 2026
+          </div>
+          <div class="paper-desc">
+           5,000 participants.  Won the race with a time of 1:10:19.
+          </div>
+        </li>
+        <li>
+            <span class="paper-title">
+              Upcoming races:
+            </span>
+            <p class="paper-desc">
+2026 Philly Marathon. Goal time: 2:24. <br>
+2027 Boston Marathon. Goal time: 2:19. <br>
+            </p>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-menu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
